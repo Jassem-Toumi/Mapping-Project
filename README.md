@@ -1,23 +1,12 @@
 ******* CSC 172 - Project 3: Street Mapping *******
 
-+ Author 1:
--  name: Jassem Toumi
-- Email: jtoumi@u.rochester.edu
-+ Author 2: 
-- name: Moez Boussarsar
-- Email: mboussar@u.rochester.edu
+Authors:
+Jassem Toumi
+Moez Boussarsar
 
 ==== Program Description ====
 The code defines a class "graphDrawer" that creates a graphical representation of a graph (standardized text input), using Swing GUI components. It has two panels, one for drawing the graph and another for controlling the search for the shortest path between two nodes using Dijkstra's algorithm. The 'GraphPanel' class draws the graph on the panel, with scaling and highlighting of the shortest path. The
 "ControlPanel" class provides text fields for entering the starting and ending nodes, and a search button that triggers a search for the shortest path, which is then highlighted in the "GraphPanel". This search button is our own idea and implementation to make the program deliver a nicer user experience (so that you can find different short paths on the same graph without having to re-run the program everytime). 
-
-==== Collaboration ====
-Dijkstra's Algorithm: Jassem (following the implementation provided in the class slides)
-Graphics implementation: Jassem and Moez
-Reading input: Moez
-Graph: Moez 
-Node, Edge: Jassem 
-General debugging: Jassem and Moez
 
 ==== Project Structure ====
 Classes:
@@ -35,7 +24,7 @@ The ControlPanel class is a panel with text fields for the start and end nodes, 
 
 ==== Challenges ====
 (Nodes arraylist)
- We started the graph implementation by storing the node objects in an ArrayList which took a lot of running time and sometimes would stop for bigger maps. Then, we changed to a HashMap storing method which made it much faster. 
+We started the graph implementation by storing the node objects in an ArrayList which took a lot of running time and sometimes would stop for bigger maps. Then, we changed to a HashMap storing method which made it much faster. 
 (Scanner / BufferedReader)
 We changed from a Scanner input reading to a BufferedReader object which has also optimized running time. 
 (Scaling in the graphics)
@@ -43,9 +32,6 @@ We had a hard time finding the optimal equation for showing all graphs with the 
 (Reading from the command line) 
 We had some trouble implementing both a command line and a graphics solution (input field+button) for passing the nodes for the shortest path.
 
-==== Optional Features ====
-- We implemented a convenient graphical feature to find the shortest path between two nodes by passing the 'from' and 'to' right in the frame of the map, making it a much better user experience (don't have to re-run the program to find a new shortest path)
-- We also implemented a dark mode feature for users who prefer dark mode that can be used by pressing on the toggle button. 
 
 ==== Runtime Analysis ====
 Dijakstra's Algorithm runs in O(V+E) in worst case scenario. Where V is the number of vertices and E is the number of Edges. 
