@@ -1,8 +1,8 @@
 ******* CSC 172 - Project 3: Street Mapping *******
 
 Authors:
-Jassem Toumi
-Moez Boussarsar
++ Jassem Toumi
++ Moez Boussarsar
 
 ==== Program Description ====
 The code defines a class "graphDrawer" that creates a graphical representation of a graph (standardized text input), using Swing GUI components. It has two panels, one for drawing the graph and another for controlling the search for the shortest path between two nodes using Dijkstra's algorithm. The 'GraphPanel' class draws the graph on the panel, with scaling and highlighting of the shortest path. The
